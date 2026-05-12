@@ -1,0 +1,33 @@
+@charset "UTF-8";/*Servir para o navegador entender que o arquivo é em UTF-8, para não dar erro de acentuação*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body{
+    background-image: linear-gradient(to right,#00E07C,#1EB672,#2E8B62);
+}
+
+main{
+    background-color:white;
+    width: 600px;
+    padding:10px;
+    margin: 20px auto;
+    border-radius:20px;
+    box-shadow: 5px 5px 15px rgba(46, 139, 99, 0.616) ;/*O primeiro parâmetro é a distância horizontal da sombra, o segundo é a distância vertical, o terceiro é o raio de desfoque e o quarto é a cor da sombra*/
+}
+
+h1{
+    color:#2E8B62;
+    text-align: center;
+    text-shadow: 1px 1px 2px #2E8B62;
+}
+
+h2{
+    color:#30614B;
+}
+
+p{
+    text-align: justify;
+}

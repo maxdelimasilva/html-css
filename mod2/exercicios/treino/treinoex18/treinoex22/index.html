@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes e pseudo-elementos</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+
+        .menu{
+            cursor:pointer;
+            background-color: #8b0000;
+            width: 100px;
+        }
+
+        .menu:hover{
+            background-color: #c52929;
+            width: 100px;
+        }
+
+        div > ul {
+            display: none;
+        }
+
+        div:hover > ul {
+            display:block;
+            list-style: none;
+            background-color: #833c3c;
+            width: 60px;
+        }
+
+        a {
+            text-decoration: none;
+            color:black;
+        }
+
+        a:active {
+            background-color: #8b0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste</h1>
+    <nav>
+        <div>
+            <h1 class="menu">MENU</h1>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
