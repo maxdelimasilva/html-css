@@ -7,15 +7,22 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat-y;
-            background-size: cover;/*cover(mostra 100% da imagem, mas se a proporção for diferente ,as bordas serao cortadas para garantir o preenchimento total),contain(mostra 100% da imagem, mas se o container tiver um tamanho diferente ele tera areas vazias),%*/
+            background-repeat: no-repeat;
+            background-size: cover;(cover(mostra 100% da imagem, mas se a proporção for diferente ,as bordas serao cortadas para garantir o preenchimento total),contain(mostra 100% da imagem, mas se o container tiver um tamanho diferente ele tera areas vazias),%)
+            background-attachment: fixed; /*scroll,fixed*/
+        
+            /*Shorthand - background
+            color > image > position > [size]> repeat > attachment*/
+
+            background: black url(imagens/wallpaper002.jpg) center center /cover no-repeat fixed;
         }
 
         main {
             background-color: white;
+            max-width: 400px;
             width:400px;
             padding:10px;
             margin:auto;
