@@ -20,7 +20,7 @@
 }
 
 html, body {
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: darkgrey;
     font-family: var(--fonte-padrao);
     scrollbar-color: rgba(0, 0, 0) rgba(0, 0, 0, 0);
@@ -63,7 +63,11 @@ section{
     padding-left:30px ;
     white-space: pre-line;
     font-family: var(--fonte-texto);
-    font-size: 3.5vw;
+    font-size: 4vw;
+}
+
+section > p{
+    padding-bottom:2em;
 }
 
 .normal{
@@ -74,18 +78,35 @@ section{
 .imagem{
     background-color: darkgrey;
     color:white;
+    box-shadow: inset 6px 6px 20px 0px black;
 }
 
 .imagem > p{
     display: inline-block;
-    width: 400px;
-    background-color:rgb(88, 88, 88)
+    max-width: 700px;
+    padding:1em;
+    background-color:rgba(88, 88, 88, 0.7)
+}
+
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position:right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position:center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer{
     background-color: black;
     color:white;
-    font-family: var(--fonte-texto);
-    font-size: 20px;
+    padding:10px;
+    font-family: var(--fonte-cabecalho);
+    font-size: 4vw;
     text-align: center;
 }
