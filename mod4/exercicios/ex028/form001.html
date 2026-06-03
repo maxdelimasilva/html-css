@@ -20,7 +20,8 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off"><!--</form>action-onde é enviado os dados pra um arquivo-->
+    <form action="cadastro.php" method="get" autocomplete="off"><!--</form>action-onde é enviado os dados pra um arquivo-->
+    <!--GET=enviar dados quando nao forem sensiveis ex:nome e até links possui limite de 3mil letras e POST=quando for sensivel ex:senha,altura,cpf,email mas o adequado é usar https para maior segurança-->
         <label for="inome">Nome:</label>
         <input type="text" name="nome" id="inome"><!--name=php,sql e id=js,ts e usa no label-->
         <label for="isobnome">Sobrenome:</label>
