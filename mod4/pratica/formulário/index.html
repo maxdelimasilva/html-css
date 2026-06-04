@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .forms{
+            margin:5px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>    
+    <form action="formulario.php" method="post" autocomplete="on">
+        
+        <fieldset>
+            <legend>Cadastro Completo</legend>
+            <div>
+                <div class="forms">
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" maxlength="30" autocomplete="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="forms">
+                    <label for="iidade">Idade:</label>
+                    <input type="number" name="idade" id="iidade" autocomplete="cc-number" min="0"
+                    max="120" value="18" required>
+                </div>
+                <div>
+                    <label for="isx">Sexo:</label><br>
+                    <input type="radio" name="sexo" id="isx" required>Masculino<br>
+                    <input type="radio" name="sexo" id="isx" required>Feminino
+                </div>
+                <div class="forms">
+                    <label for="idata">Data de Nascimento: </label>
+                    <input type="date" name="data" id="idata" value="2002-02-02">
+                </div>
+                <div class="forms">
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="forms">
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="isenha" autocomplete="new-password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="forms">
+                    <label for="iprof">Profissão</label>
+                    <input type="text" name="prof" id="iprof" list="lstprof" placeholder="Selecione ou digite" >
+                    <datalist id="lstprof">
+                        <option>Desenvolvedor</option>
+                        <option>Frentista</option>
+                        <option>Cabeleiro</option>
+                        <option>Médico</option>
+                        <option>Autonômo</option>
+                    </datalist>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Gostos Pessoais</legend>
+            <div class="forms">
+                <label for="icor">Cor Favorita:</label>
+                <input type="color" name="cor" id="icor" value="#0000ff" >
+            </div>
+            <div class="forms">
+                <label for="Imusica">Gênero Musical:</label>
+                
+                <select name="musica" id="Imusica">
+                    <option>--Escolha--</option>
+                    <option value="pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Funk">Funk</option>
+                    <option value="Sertanejo">Sertanejo</option>
+                    <option value="Rap">Rap</option>
+                </select>
+            </div>
+        </fieldset>
+        <div>
+            <div class="forms">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
