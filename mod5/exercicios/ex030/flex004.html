@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .container{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            background-color: rgb(0, 102, 68);
+            height: 500px;
+            
+        }
+        
+        .item{
+            background-color: rgb(60, 255, 0);
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /*justify content ele alinha baseado no main axis
+        lembrando que dependendo do wrap a direção do main axis muda de cima,baixo ou lado.
+
+        justify-content:flex-start-primeiro item gruda no inicio do main-start
+        
+        justify-content:flex-end;-o item fica grudado no lado do main end e o espaço em branco fica  grudado no main-start
+        
+        justify-content:center; ele centraliza os itens no centro do container e os espaços em branco serao distrivuidos nos main start e end.
+
+        justify-content:space-between ele separa  os itens, deixando o primeiro e o ultimo item do lado do main axis e distribuindo os outros com espaço com tamanho igual.
+
+        justify-content:evenly -ele nao gruda o primeiro e ultimo no main axis,ele deixa um espaço igual sem graudar os itens no maix axis dando um espaço igual entre eles.
+
+        justify-content:space-around- cria epsaços em branco no container e centraliza os itens neles 
+
+        align-items alinha itens baseado no cross axis.
+
+        align-items:strech; - estica o item do cross start ate o cross end.
+
+        align-items:flex-start; - ele cola no cross-start o item e o espçao em branco cola no cross end.
+
+        align-items:flex-end; - ele cola no cross-end o item e o espaço em branco cola no cross end.
+
+        align-items:center; - o espaço em branco cola no cross start e end e o item deixa no meio entre eles 
+
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+</body>
+</html>
