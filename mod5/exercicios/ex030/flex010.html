@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: #ffa07a;
+            border: 1px solid black;
+            flex-flow: row nowrap;
+        }
+        
+        .item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 300px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+         
+        /*
+        isso é so nos flex-itens
+        valor padrao e nome:
+        0v-vnão cresce ou diminui
+        1 -vsim cresce ou diminui
+        2 - ele cresce ou diminui o dobro do 1(ele usa um valor de referencia)
+        flex-grow: 0; - crescer
+        flex-shrink: 1 ; - diminuir 
+        
+        
+        flex-basis trabalha com flex-shrink e grow
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odit blanditiis aperiam cupiditate! Assumenda omnis ratione ut maxime dolorum quo ex recusandae officiis perferendis beatae animi nulla temporibus unde debitis similique tempore iusto aperiam, excepturi deleniti accusamus dicta repellat? Eum ratione placeat minus veniam hic vel, esse impedit itaque asperiores.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, aut! Nam temporibus corrupti voluptatem quisquam, dolore rerum error, beatae, nemo praesentium in assumenda laboriosam labore eligendi molestias tempore veritatis quia ipsa quae esse sit magnam quis earum facere sunt. Nesciunt illo reprehenderit optio ullam nihil natus alias corporis delectus iure.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ea repellendus officiis similique, quae ex aut, delectus sint, qui porro facilis accusantium molestiae error. Facilis eos quibusdam dolore ratione corporis possimus cupiditate, maiores excepturi deserunt velit alias aspernatur quas omnis id! Animi repudiandae recusandae voluptatem aliquid optio placeat. Perspiciatis, possimus.</div>
+    </div>
+</body>
+</html>
