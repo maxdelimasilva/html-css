@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+        }
+        
+        .item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            margin: 5px;
+            text-align: center;
+            flex-basis: 150px;
+        }
+        /*
+        flex-basis: altera o tamanho item de forma flexivel.
+        
+        flex-basis:auto; ele se altera baseado no tamnaho dat tela e a quantidade de itens ao lado.
+
+        flex-basis:valor a definir; voce determina o tamnho maximo e se o tamanho do container for menor que isso ele se adaptará.
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Outro conteúdo</div>
+        <div class="item">B</div>
+        <div class="item" id="item">Contéudo um pouco maior</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">Contéudo maior ainda, que vai ocupar mais espaço</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
