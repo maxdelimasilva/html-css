@@ -16,22 +16,36 @@
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 250px;
         }
 
         #a{
-            flex-shrink: 1;
-            flex-grow: 0;
+            /*
+            flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: 250px;
+            */
+
+            flex:1 0 250px;
         }
 
         #b{
-            flex-shrink: 1;
-            flex-grow: 2;
+            /*
+            flex-shrink: 2;
+            flex-grow: 1;
+            flex-basis: 250px;
+            */
+
+            flex:1 2 250px;
         }
 
         #c{
-            flex-shrink: 1;
-            flex-grow: 0;
+            /*
+            flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: 250px;
+            */
+
+            flex:1 0 250px;
         }
 
         /*
@@ -45,7 +59,17 @@
         flex-shrink: 1 ; - diminuir 
         
         
-        flex-basis trabalha com flex-shrink e grow
+        flex-basis trabalha com flex-shrink e grow mas use a propriedade que junta todas elas o flex,
+        
+        flex:grow shrink basis;
+
+        valor padrão - flex:0 1 auto; ou flex:initial;
+
+        nada flexivel - flex:0 0 auto; ou flex:none;
+
+        flexivel máximo - flex:1 1 auto; ou flex:auto;
+
+        se colocar apenas um valor tipo flex:3; é igual a flex:3 1 auto; 
         */
     </style>
 </head>
