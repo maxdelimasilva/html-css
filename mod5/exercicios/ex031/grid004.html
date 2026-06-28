@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na prática</title>
+    <style>
+        div.container{
+            display: grid;
+            grid-template: repeat(3, auto) / repeat(3, 100px);
+            
+            background-color: lightsalmon;
+            border:3px solid blue;
+        }
+
+        div.item{
+            background-color: lightskyblue;
+            border: 3px solid red;
+            padding: 5px;
+        }
+
+        /*
+        repeat-utilizando para repetir o uma quanitdade de colunas e linhaws. ex:repeat(2, 100px) primeiro quanto vai repetir segundo o tamanho.
+
+
+        fraction (fr):distribui os itens pela largura do contêiner se eu tiver 3 vezes 1fr ele separa 3 vezes a largura. se vai usar grid é recomendado usar ele em vez do auto.Mas se eu quiser fazer 1fr 2fr 1fr pode? pode,somando os fraction dara 4 entao dividira 4 e segundo item tera 2 vezes o tamanho dos outros itens. e possivel utilziar  pixel e porcentagens jutno com 1fr  por exemplo grid-template-columns: 100px 20% 1fr 1fr ou repeat(2, 1fr)
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+</body>
+</html>
